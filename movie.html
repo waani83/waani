@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+  <link href="http://vjs.zencdn.net/5.11.8/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <style type="text/css">
+  #video_canvas{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width:320px;
+    height:240px;
+  }
+  .content_style{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  </style>
+</head>
+<body>
+  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+    poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+      <source src="sample.mp4" type='video/mp4'>
+      <source src="sample.mp4" type='video/webm'>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>
+
+    <script src="http://vjs.zencdn.net/5.11.8/video.js"></script>
+    <div data-role="page" id="video_value" data-add-back-btn="true">
+      <div data-role="header" data-theme="b">
+        <a href="waani.html" rel="external" data-icon = "home" data-direction="reverse">Home</a>
+        <h1>최고의 가치</h1>
+      </div>
+      <div data-role ="content" data-theme="c" class="content_style">
+        <div id="video_canvas">
+          <div>
+            <video class="video-js vjs-default-skin" width="320" height="240" controls preload="auto"
+            poster="images/most_value.jpg" data-setup="{}">
+            <source src="sample.mp4" type="video/mp4" codecs="avc1.42E01E.mp4a.400.2" />
+            <source src="video/virtual_university.ogv" type='video/ogg; codecs="theora, vorbis"' />
+            <source src="video/virtual_university.webm" type='video/webm; codecs="vp8, vorbis"' />
+          </video>
+          <p class="vjs-no-video"><strong>비디오 다운로드:</strong>
+            <a href="sample.mp4" target="_blank">MP4</a>,
+            <a href="video/virtual_university.ogv" target="_blank">Ogg</a>,
+            <a href="video/virtual_university.webm" target="_blank">WebM</a>
+            <br>
+          </p>
+       </div>
+  </div>
+</div>
+<div data-role="footer" data-theme="b">
+<h2>버추얼 대학교</h2>
+</div>
+</body>
+</html>
